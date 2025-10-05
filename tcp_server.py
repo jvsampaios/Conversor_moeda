@@ -68,8 +68,8 @@ while True:
             if valor_convertido is not None:
                 nome_moeda = moedas_suportadas.get(moeda.lower(), "desconhecida")
                 resposta = (f"R$ {valor_real:.2f} equivalem a "
-                            f"R$ {valor_convertido:.2f} ({nome_moeda}). "
-                            f"Cotação: {cotacao:.2f}")
+                            f"$ {valor_convertido:.2f} ({nome_moeda}). "
+                            f"Cotação: R$ {cotacao:.2f}")
             else:
                 resposta = f"Erro: A moeda '{moeda}' não é suportada. Tente 'dolar' ou 'euro'."
 
