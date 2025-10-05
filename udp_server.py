@@ -20,25 +20,25 @@ moedas_suportadas = {
 
 def calcular_conversao(valor_real, moeda):
     """Gera uma cotação aleatória e calcula o valor convertido."""
-    if moeda.lower() == "1":
-        cotacao = random.uniform(5.5, 6.5)
-        valor_convertido = valor_real / cotacao
+   if moeda.lower() == "1":
+        cotacao = random.uniform(0.15, 0.20)
+        valor_convertido = valor_real * cotacao
         return valor_convertido, cotacao
     elif moeda.lower() == "2":
-        cotacao = random.uniform(6.5, 7.0)
-        valor_convertido = valor_real / cotacao
+        cotacao = random.uniform(0.10, 0.15)
+        valor_convertido = valor_real * cotacao
         return valor_convertido, cotacao
     elif moeda.lower() == "3":
-        cotacao = random.uniform(7.0, 7.5)
-        valor_convertido = valor_real / cotacao
+        cotacao = random.uniform(0.05, 0.10)
+        valor_convertido = valor_real * cotacao
         return valor_convertido, cotacao
     elif moeda.lower() == "4":
-        cotacao = random.uniform(6.5, 7.2)
-        valor_convertido = valor_real / cotacao
+        cotacao = random.uniform(0.01, 0.05)
+        valor_convertido = valor_real * cotacao
         return valor_convertido, cotacao
     elif moeda.lower() == "5":
-        cotacao = random.uniform(0.001, 0.008)
-        valor_convertido = valor_real / cotacao
+        cotacao = random.uniform(260.0, 270.0)
+        valor_convertido = valor_real * cotacao
         return valor_convertido, cotacao
     else:
         return None, None
